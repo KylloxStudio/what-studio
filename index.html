@@ -141,12 +141,23 @@
     <script src="js/animatescroll.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-51129421-3', 'auto');
-    ga('send', 'pageview');
+      ga('create', 'UA-51129421-3', 'auto');
+      ga('send', 'pageview');
+
+      function CheckDownloadDurangoV2() {
+        if (confirm("전투 시스템 등의 기능은 https://github.com/KylloxStudio/Durango_V2 를 참고해주세요 (PC 전용). 확인 버튼을 누를 시 위 링크로 이동하고, 취소 버튼을 누를 시 원본 듀랑고 설치 링크로 이동합니다.")){
+            var win = window.open('https://github.com/KylloxStudio/Durango_V2', '_blank');
+            win.focus();
+        }
+        else {
+            var win = window.open('https://drive.google.com/file/d/1CpxREFRVtQsZonzq0TZeuiv9cBzHojSx/view?usp=sharing', '_blank');
+            win.focus();
+        }
+      }
   </script>
 </html>
