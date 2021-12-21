@@ -150,13 +150,9 @@
       ga('send', 'pageview');
 
       function CheckDownloadDurangoV2() {
-        if (confirm("전투 시스템 등의 기능은 https://github.com/KylloxStudio/Durango_V2 를 참고해주세요 (PC 전용). 확인 버튼을 누를 시 위 링크로 이동하고, 취소 버튼을 누를 시 원본 듀랑고 설치 링크로 이동합니다.")){
-            var win = window.open('https://github.com/KylloxStudio/Durango_V2', '_blank');
-            win.focus();
-        }
-        else {
-            var win = window.open('https://drive.google.com/file/d/1CpxREFRVtQsZonzq0TZeuiv9cBzHojSx/view?usp=sharing', '_blank');
-            win.focus();
+        if (confirm("전투 시스템 등의 추가적인 기능은 https://github.com/KylloxStudio/Durango_V2를 참고해주세요 (PC 전용) - Kyllox")) {
+          window.open('https://drive.google.com/file/d/1CpxREFRVtQsZonzq0TZeuiv9cBzHojSx/view?usp=sharing', '_blank');
+          window.open('https://github.com/KylloxStudio/Durango_V2', '_blank');
         }
       }
   </script>
